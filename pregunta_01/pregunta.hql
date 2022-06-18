@@ -2,7 +2,7 @@
 Pregunta
 ===========================================================================
 
-Para resolver esta pregunta use el archivo data.tsv.
+Para resolver esta pregunta use el archivo data.tsv. 
 
 Compute la cantidad de registros por cada letra de la columna 1.
 Escriba el resultado ordenado por letra. 
