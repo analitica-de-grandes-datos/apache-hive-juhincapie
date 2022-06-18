@@ -23,9 +23,8 @@ TBLPROPERTIES ("skip.header.line.count"="0");
 
 LOAD DATA LOCAL INPATH "data.tsv" OVERWRITE INTO TABLE datos;
 
-CREATE TABLE datos_ordenados AS SELECT * FROM datos ORDER BY letra, valor;
+CREATE TABLE datos_ordenados AS SELECT * FROM datos ORDER BY letra, valor, fecha;
 
 INSERT OVERWRITE LOCAL DIRECTORY './output'
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 SELECT * FROM datos_ordenados;
-
